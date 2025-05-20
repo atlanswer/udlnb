@@ -3,15 +3,19 @@ name = "udlnb"
 version = "0.1.0"
 description = "Notebooks from UDL book"
 requires-python = ">=3.13"
+classifiers = [ "Programming Language :: Python :: 3 :: Only", "Programming Language :: Python :: 3.13" ]
 dependencies = [
-    "ipykernel>=6.29.5",
-    "ipython>=9.2.0",
-    "matplotlib>=3.10.3",
-    "numpy>=2.2.5",
+  "ipykernel>=6.29",
+  "ipython>=9.2",
+  "matplotlib>=3.10",
+  "numpy>=2.2",
 ]
 
 [dependency-groups]
-dev = ["ruff>=0.11.9"]
+dev = [ "ruff>=0.11" ]
+
+[tool.ruff]
+line-length = 80
 
 [tool.pyright]
 typeCheckingMode = "standard"
